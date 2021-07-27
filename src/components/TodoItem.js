@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function TodoItem({ text }) {
+export default function TodoItem({ title }) {
   return (
     <>
       <li className={`todo-item`}>
@@ -8,7 +8,7 @@ export default function TodoItem({ text }) {
           <div className="item-check-wrapper">
             <div className={`item-check completed`}></div>
           </div>
-          <span>{text}</span>
+          <span>{title}</span>
         </div>
       </li>
     </>

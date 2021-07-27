@@ -9,9 +9,9 @@ export default function TodoList({ items }) {
 
       <ul className="list" >
         {
-          items.map(({ text }, index) => {
+          items.map(({ title }, index) => {
             return (
-              <TodoItem key={index} text={text} />
+              <TodoItem key={index} title={title} />
             )
           })
         }

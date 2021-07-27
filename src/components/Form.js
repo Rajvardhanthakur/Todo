@@ -5,8 +5,8 @@ export default function Form({ addItem }) {
   const onSubmit = (e) => {
     e.preventDefault()
     const item = {
-      "id": 4,
-      "text": text
+      "title": text,
+      "description": ""
     }
     addItem(item)
     setText('')

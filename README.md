@@ -1,3 +1,10 @@
+# Setting up project
+
+1. First run commnad :- npm install
+
+2. Then run npm start to start the project
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

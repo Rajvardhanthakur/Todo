@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 
 export default function Form({ addItem }) {
   const [text, setText] = useState('')
-  const onSubmit = (evt) => {
-    evt.preventDefault()
+  const onSubmit = (e) => {
+    e.preventDefault()
     const item = {
       "id": 4,
       "text": text
@@ -15,7 +15,7 @@ export default function Form({ addItem }) {
   return (
     <form onSubmit={onSubmit}>
       <div className={`input-wrapper`}>
-        <input aria-label="Create a new todo..." type="text" value={text} placeholder="Create a new todo..." onChange={evt => setText(evt.target.value)} />
+        <input aria-label="Create a new todo..." type="text" value={text} placeholder="Create a new todo..." onChange={e => setText(e.target.value)} />
       </div>
     </form>
   )

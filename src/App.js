@@ -8,20 +8,8 @@ function App() {
   const [items, setItems] = useState([
     {
       "id": 1,
-      "text": "Complete online JavaScript course"
-    },
-    {
-      "id": 2,
-      "text": "Jog around the park 3x"
-    },
-    {
-      "id": 3,
-      "text": "10 minutes meditation"
-    },
-    {
-      "id": 4,
-      "text": "Read for 1 hour"
-    }])
+      "text": "Create your plans"
+    },])
 
   const addItem = (item) => {
     setItems([...items, item])
